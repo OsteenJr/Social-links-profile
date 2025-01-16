@@ -1,0 +1,118 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    height: 100vh;
+    width: 100%;
+}
+.background {
+    background-color: #141414;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.card {
+    background-color: #1d1c1c;
+    width: 23rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+    border-radius: 1rem;
+}
+.card-image {
+    width: 40%;
+    height: auto;
+   margin-bottom: 1.5rem;
+}
+.card-image img {
+    width: 70%;
+    height: auto;
+    display: block;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.card-text {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.name {
+    color: #fff;
+    margin-bottom: .5rem;
+    font-size: 1.5rem;
+}
+.location {
+    color: greenyellow;
+    font-size: .75rem;
+    margin-bottom: 1rem;
+}
+.role {
+    color: #fff;
+    font-weight: 100;
+    font-size: .75rem;
+}
+.card-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+    width: 100%;
+    align-items: center;
+}
+.card-btn {
+    display: block;
+    width: 75%;
+    background-color: #343434;
+    color: #fff;
+    cursor: pointer;
+    padding-block: .8rem;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 0.4rem;
+    transition: color .4s, background-color .4s;
+}
+.card-btn:hover {
+    background-color: yellowgreen;
+    color: #141414;
+    
+}
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media screen and (max-width: 1150px) {
+}
+@media screen and (max-width: 1220px) {
+
+}
+/* For medium devices */
+@media screen and (max-width: 800px) {
+}
+@media screen and (max-width: 600px) {
+    .card {
+        margin: 0 1rem;
+    }
+    .name {
+        font-size: 1.3rem;
+    }
+    .location, .role {
+        font-size: .7rem;
+    }
+    .card-image {
+        width: 40%;
+    }
+    .card-btn {
+        font-size: .7rem;
+    }
+
+}
+/* For small devices */
+@media screen and (max-width: 450px) {
+
+}
+@media screen and (max-width: 320px) {
+    
+}
